@@ -16,8 +16,8 @@ else:
 luna = Client(
     ":memory:",
     bot_token=bot_token,
-    api_id=6,
-    api_hash="eb06d4abfb49dc3eeb1aeb98ae0f581e",
+    api_id=8626831,
+    api_hash="db23330a6edf4a517ee186b35cedec71",
 )
 
 bot_id = int(bot_token.split(":")[0])
@@ -53,8 +53,8 @@ async def type_and_send(message):
 @luna.on_message(filters.command("repo") & ~filters.edited)
 async def repo(_, message):
     await message.reply_text(
-        "[GitHub](https://github.com/thehamkercat/LunaChatBot)"
-        + " | [Group](t.me/PatheticProgrammers)",
+        "[DEV](t.me/Sungjinwooarc)"
+        + " | [Group](t.me/manhwarecommend)",
         disable_web_page_preview=True,
     )
 
@@ -109,7 +109,7 @@ async def main():
     print(
         """
 -----------------
-| Luna Started! |
+| Started! |
 -----------------
 """
     )
